@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:full_name",
+ "creation": "2022-02-09 17:07:56.500382",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "student_age",
+  "gender",
+  "department",
+  "date_and_time_of_joining",
+  "column_break_6",
+  "photo",
+  "section_break_8",
+  "address",
+  "barcode",
+  "marks",
+  "indian",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_age",
+   "fieldtype": "Data",
+   "label": "student age"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "department",
+   "options": "depart"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "school details",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "photo"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "barcode"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "gender",
+   "options": "male\nfemale"
+  },
+  {
+   "fieldname": "date_and_time_of_joining",
+   "fieldtype": "Datetime",
+   "label": "date and time of joining"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "address"
+  },
+  {
+   "fieldname": "marks",
+   "fieldtype": "Table",
+   "label": "marks",
+   "options": "child doc"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "first name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "full name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "indian",
+   "fieldtype": "Check",
+   "label": "indian"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-11 17:14:51.407726",
+ "modified_by": "Administrator",
+ "module": "custom_app",
+ "name": "school details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
